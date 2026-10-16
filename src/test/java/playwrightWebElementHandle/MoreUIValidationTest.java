@@ -83,7 +83,7 @@ public class MoreUIValidationTest
 
         // Stop tracing and export it into a zip archive.
         newContext.tracing().stop(new Tracing.StopOptions().setPath(Paths.get("trace.zip")));
-        //comments
+
 
 
     }
