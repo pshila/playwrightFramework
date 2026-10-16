@@ -30,7 +30,8 @@ public class TestBase {
 
         if(browserName.equalsIgnoreCase("chrome"))
         {
-            browser=playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+           // browser=playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            browser=playwright.chromium().launch();
         }
         else if (browserName.equalsIgnoreCase("firfox")) {
           browser=  playwright.firefox().launch();
