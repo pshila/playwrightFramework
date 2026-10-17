@@ -9,21 +9,21 @@ on:
         browser:
           description: 'Browser to run tests'
           required: true
-          default: 'chromium'
+          default: 'chrome'
           type: choice
           options:
-            - chromium
+            - chrome
             - firefox
-            - webkit
+            - safari
         environment:
           description: 'Environment to run tests'
           required: true
-          default: 'QA'
+          default: 'qa'
           type: choice
           options:
-            - QA
-            - UAT
-            - PROD
+            - qa
+            - uat
+            - prod
 jobs:
   test:
     runs-on: ubuntu-latest
